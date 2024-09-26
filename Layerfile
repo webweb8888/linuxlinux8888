@@ -7,4 +7,4 @@ RUN apt-get update && \
 
 RUN docker run -it -d --shm-size="32000m" -e quantitytarget="even" -e profit="0.01" -e user="virtual" -e closetrades="on" -e sleep="120" -p 80:8080 clevertradebot/clevertradebot /bin/bash /start
 
-EXPOSE WEBSITE http://localhost:8080
+EXPOSE WEBSITE http://localhost:80
