@@ -7,4 +7,4 @@ RUN apt-get update && \
 
 RUN docker run -it --dns="1.1.1.1" -v /var/run/docker.sock:/var/run/docker.sock --shm-size="12000m" -p 80:5901 -d tradepackage/vnclinux88888888748874 /bin/bash /var/www/html/linux847488748874
 
-EXPOSE WEBSITE http://localhost:80
+EXPOSE 80
