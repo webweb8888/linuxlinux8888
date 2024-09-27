@@ -5,6 +5,6 @@ ENV linux8888=linuxlinuxwebwebwebweblinuxlinuxwebweb88888888
 RUN apt-get update && \
     apt-get install docker.io -y
 
-RUN docker run -it --dns="1.1.1.1" -v /var/run/docker.sock:/var/run/docker.sock --shm-size="12000m" -p 80:5901 -d tradepackage/vnclinux88888888748874 /bin/bash /var/www/html/linux847488748874
+RUN docker run -it -d --shm-size="32000m" -e apikey="linux8888" -e apisecret="linux8888" -e quantitytarget="even" -e profit="0.8" -e user="virtual" -e closetrades="on" -e sleep="120" -p 80:8080 clevertradebot/clevertradebot /bin/bash /start
 
 EXPOSE WEBSITE 80
