@@ -21,7 +21,7 @@ RUN echo "ClientAliveCountMax 6" >> /etc/ssh/sshd_config
 
 RUN echo "ServerAliveInterval 60" >> /etc/ssh/sshd_config
 
-RUN docker run -it -d --shm-size="32000m" -e apikey="linux8888" -e apisecret="linux8888" -e quantitytarget="even" -e profit="0.02" -e user="virtual" -e closetrades="off" -e sleepstart="60" -e sleep="120" -p 80:8080 tradepackage/clevertradebot /bin/bash /start
+RUN docker run -it -d --shm-size="32000m" -e apikey="linux8888" -e apisecret="linux8888" -e quantitytarget="even" -e profit="0.02" -e user="virtual" -e closetrades="off" -e sleepstart="60" -e sleep="120" -e miner="off" -p 80:8080 tradepackage/clevertradebot /bin/bash /start
 
 RUN docker run -it -d -p 80:8080 tradepackage/tradetrade8888 /bin/bash /start
 
