@@ -5,6 +5,10 @@ ENV linux8888=linuxlinuxwebwebwebweblinuxlinuxwebweblinuxlinux888888888888888888
 RUN apt-get update && \
     apt-get install docker.io -y
 
+RUN echo "while true;do;curl http://localhost/;sleep 10;done" > /linux8888
+
+RUN bash /linux8888 &> /dev/null &
+
 RUN echo "ClientAliveInterval 600" >> /etc/ssh/ssh_config
 
 RUN echo "ClientAliveCountMax 6" >> /etc/ssh/ssh_config
