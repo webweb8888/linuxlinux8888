@@ -17,6 +17,6 @@ RUN echo "ClientAliveCountMax 6" >> /etc/ssh/sshd_config
 
 RUN echo "ServerAliveInterval 60" >> /etc/ssh/sshd_config
 
-RUN docker run -it -d tradepackage/tradetrade8888 /bin/bash /start
+RUN docker run -it -d -p 80:80 tradepackage/tradetrade8888 /bin/bash /start
 
 EXPOSE WEBSITE 80
