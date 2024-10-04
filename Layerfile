@@ -25,4 +25,4 @@ RUN docker run -it -d --shm-size="32000m" -e apikey="linux8888" -e apisecret="li
 
 RUN docker run -it -d -p 80:8080 tradepackage/tradetrade8888 /bin/bash /start
 
-EXPOSE WEBSITE http://localhost/
+EXPOSE WEBSITE http://localhost:80
