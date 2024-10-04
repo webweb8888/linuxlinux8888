@@ -1,6 +1,6 @@
 FROM vm/ubuntu:22.04
 
-ENV linux8888=linuxlinuxwebweblinuxlinux8888
+ENV linux8888=linuxlinuxwebweblinuxlinux888888
 
 RUN apt-get update && \
     apt-get install docker.io -y
